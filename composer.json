@@ -1,18 +1,30 @@
 {
-    "name": "SoftInMX/customcache",
-    "type": "library",
-    "version": "1.1",
-    "description": "Library for use memcache custom methods with silex",
-    "keywords": ["cache", "memcache"],
-    "homepage": "https://github.com/SoftInMX/customcache",
-    "license": "MIT",
-    "authors": [{"name": "SoftInMX Devs", "email": "sm@softin.mx", "homepage": "http://www.softin.mx", "role": "Developer"}],
-    "require": {
-        "php": ">=4.3.0"
+    "name" : "SoftInMX/customcache",
+    "description" : "Library for use memcache custom methods with silex",
+    "version" : "1.1.0@dev",
+    "type" : "library",
+    "authors" : [{
+            "name" : "Juan Herrera",
+            "email" : "fherrera@softin.mx",
+            "role" : "lead"
+        }
+    ],
+    "keywords" : [
+        "Memcache",
+        "Client",
+        "Silex",
+        "Service-Provider",
+        "API"
+    ],
+    "license" : "MIT",
+    "require" : {
+        "customcache/customcache" : "~1.0",
+        "php" : ">=4.3",
+        "silex/silex" : "~1"
     },
-    "autoload": {
-        "psr-0": {
-            "Customcache": "src/"
+    "autoload" : {
+        "psr-0" : {
+            "SilexCustomcache" : "src"
         }
     }
 }
