@@ -1,2 +1,2 @@
-# customcache
-For memcache use with silex
+# Custom Memcache
+To use memcache custom methods with silex
